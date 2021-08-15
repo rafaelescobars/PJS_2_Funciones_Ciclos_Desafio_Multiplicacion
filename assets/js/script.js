@@ -22,6 +22,9 @@ let validate = (input) => {
     } else {
       if (skip_msg == true) {
         div_msg_out_of_range.classList.remove("d-none");
+        sec_content.classList.add("d-none");
+        div_multiplication.classList.add("d-none");
+        div_factorial.classList.add("d-none");
         div_msg_out_of_range.innerHTML = "Número fuera de rango";
         alert("Número fuera de rango");
         skip_msg = false;
@@ -32,6 +35,9 @@ let validate = (input) => {
   } else {
     if (skip_msg == true) {
       div_msg_out_of_range.classList.remove("d-none");
+      sec_content.classList.add("d-none");
+      div_multiplication.classList.add("d-none");
+      div_factorial.classList.add("d-none");
       div_msg_out_of_range.innerHTML = "Ingese sólo números";
       alert("Ingese sólo números");
       skip_msg = false;
